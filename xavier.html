@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kipini Secondary School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: #f2f4f8;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #00509e;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      background: white;
+      border-bottom: 2px solid #ccc;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    form input, form select, form textarea {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      padding: 10px;
+      margin: 10px 0;
+    }
+
+    input[type="submit"] {
+      background-color: #00509e;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .gallery img {
+      width: 200px;
+      margin: 10px;
+      border: 2px solid #003366;
+      border-radius: 5px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kipini Secondary School</h1>
+    <p>Quality Education for All</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#fees">Fees</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#login">Login</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="home">
+      <h2>Welcome to Kipini Secondary School</h2>
+      <p>We are committed to delivering excellence in education and character development. Our institution provides a nurturing environment where students can thrive academically and socially.</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Kipini Secondary School was established in 2002 with the aim of providing quality education to students in the coastal region. We have consistently produced top-performing students in national examinations, and we pride ourselves in discipline, hard work, and moral integrity.</p>
+      <ul>
+        <li><strong>Vision:</strong> To be a center of excellence in academic and moral values.</li>
+        <li><strong>Mission:</strong> To provide holistic education to all learners.</li>
+        <li><strong>Motto:</strong> Discipline and Hard Work.</li>
+      </ul>
+    </section>
+
+    <section id="admissions">
+      <h2>Admissions</h2>
+      <p>We welcome new students from all walks of life. Admission is open for Form 1 to Form 4. Here’s the process:</p>
+      <ol>
+        <li>Download the admission form from our website or collect it from our office.</li>
+        <li>Fill in the form with correct student details.</li>
+        <li>Attach KCPE results and birth certificate.</li>
+        <li>Submit the form physically or via email to admissions@kipinischool.ac.ke</li>
+      </ol>
+    </section>
+
+    <section id="fees">
+      <h2>Fee Payment</h2>
+      <form>
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" placeholder="Enter student full name" required>
+
+        <label for="class">Class/Form:</label>
+        <input type="text" id="class" placeholder="Form 1 / 2 / 3 / 4" required>
+
+        <label for="amount">Amount (KES):</label>
+        <input type="number" id="amount" placeholder="e.g. 10000" required>
+
+        <label for="mpesa">MPESA Transaction Code:</label>
+        <input type="text" id="mpesa" placeholder="Enter MPESA code" required>
+
+        <input type="submit" value="Submit Payment">
+      </form>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/200?text=Classroom" alt="Classroom">
+        <img src="/storage/emulated/0/DCIM/Facebook/FB_IMG_1748626984012.jpg alt="Lab">
+        <img src="https://via.placeholder.com/200?text=Playground" alt="Playground">
+        <img src="https://via.placeholder.com/200?text=Events" alt="Events">
+        <img src="https://via.placeholder.com/200?text=Computer+Lab" alt="Computer Lab">
+      </div>
+    </section>
+
+    <section id="login">
+      <h2>Login Portal</h2>
+      <form>
+        <label for="role">Select Role:</label>
+        <select id="role">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="parent">Parent</option>
+        </select>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+
+        <input type="submit" value="Login">
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>You can reach out to us via the form below or visit our offices during working hours.</p>
+      <form>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <input type="submit" value="Send Message">
+      </form>
+
+      <p><strong>Phone:</strong> +254 712 345678</p>
+      <p><strong>Email:</strong> info@kipinischool.ac.ke</p>
+      <p><strong>Location:</strong> Kipini Town, Tana River County, Kenya</p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Kipini Secondary School. All rights reserved.</p>
+  </footer>
+
+</body>
+</html> 
